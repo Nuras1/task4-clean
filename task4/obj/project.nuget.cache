@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A/2GyJKH8Ts=",
+  "dgSpecHash": "LtFTdDMPNAo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+  "projectFilePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cassian Comp\\.nuget\\packages\\anglesharp\\0.14.0\\anglesharp.0.14.0.nupkg.sha512",
     "C:\\Users\\Cassian Comp\\.nuget\\packages\\automapper\\16.1.1\\automapper.16.1.1.nupkg.sha512",
@@ -182,9 +182,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.Data.Services.Client 5.6.4 требуется Microsoft.Data.OData (= 5.6.4), но в результате разрешения получена версия Microsoft.Data.OData 5.8.4.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "Microsoft.Data.OData",
       "targetGraphs": [
         "net8.0"
@@ -194,9 +194,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"Microsoft.AspNet.WebApi.Client 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "Microsoft.AspNet.WebApi.Client",
       "targetGraphs": [
         "net8.0"
@@ -206,9 +206,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"Microsoft.AspNet.WebApi.Core 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net8.0"
@@ -218,9 +218,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"Microsoft.Azure.ActiveDirectory.GraphClient 2.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "Microsoft.Azure.ActiveDirectory.GraphClient",
       "targetGraphs": [
         "net8.0"
@@ -230,9 +230,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"Microsoft.Azure.KeyVault.Core 1.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "Microsoft.Azure.KeyVault.Core",
       "targetGraphs": [
         "net8.0"
@@ -242,9 +242,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"Microsoft.Data.Services.Client 5.6.4\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "Microsoft.Data.Services.Client",
       "targetGraphs": [
         "net8.0"
@@ -254,9 +254,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"Microsoft.IdentityModel 6.1.7600.16394\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "Microsoft.IdentityModel",
       "targetGraphs": [
         "net8.0"
@@ -266,9 +266,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"SharePointPnP.IdentityModel.Extensions 1.2.4\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "SharePointPnP.IdentityModel.Extensions",
       "targetGraphs": [
         "net8.0"
@@ -278,9 +278,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"SharePointPnPCoreOnline 3.28.2012\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "SharePointPnPCoreOnline",
       "targetGraphs": [
         "net8.0"
@@ -290,9 +290,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"WindowsAzure.Storage 7.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "projectPath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_itransition\\task4\\task4.csproj",
+      "filePath": "C:\\Users\\Cassian Comp\\Documents\\itransition_tasks\\task4_git\\task4_old\\task4\\task4.csproj",
       "libraryId": "WindowsAzure.Storage",
       "targetGraphs": [
         "net8.0"
