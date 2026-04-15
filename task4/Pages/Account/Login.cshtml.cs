@@ -8,15 +8,19 @@ namespace task4.Pages.Account
     {
         private readonly AuthService _auth;
 
-        [BindProperty] public string Email { get; set; }
-        [BindProperty] public string Password { get; set; }
+        [BindProperty] public string Email { get; set; } = "";
+        [BindProperty] public string Password { get; set; } = "";
 
         public LoginModel(AuthService auth)
         {
             _auth = auth;
         }
+
         public async Task<IActionResult> OnPost()
         {
+            if (!ModelState.IsValid)
+                return Page();
+
             var user = await _auth.Login(Email, Password);
 
             if (user == null)
