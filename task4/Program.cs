@@ -1,34 +1,39 @@
 using Microsoft.EntityFrameworkCore;
-
-using task4;
+using task4.Data;
+using task4.Helpers;
+using task4.Middleware;
+using task4.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=app.db"));
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<EmailService>();
+builder.Services.AddScoped<PasswordHasher>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
-app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseSession();
+
+app.UseMiddleware<CheckUserMiddleware>();
 
 app.MapRazorPages();
 
-app.Run();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=Users.db"));
-
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options => options.LoginPath = "/login");
+app.Run($"http://0.0.0.0:{port}");

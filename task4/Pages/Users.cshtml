@@ -1,0 +1,145 @@
+@page
+@model task4.Pages.UsersModel
+@using task4.Models
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0">User Management</h4>
+
+        <a href="/Account/Logout" class="btn btn-outline-danger btn-sm">
+            Logout
+        </a>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <div id="toastMessage" class="alert alert-success alert-dismissible fade show">
+            @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <form method="post">
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+
+            <div class="d-flex gap-2">
+
+                <button id="btnBlock" type="submit" asp-page-handler="Block" class="btn btn-danger btn-sm">
+                    Block
+                </button>
+
+                <button id="btnUnblock" type="submit" asp-page-handler="Unblock" class="btn btn-outline-success btn-sm">
+                    <i class="bi bi-unlock"></i>
+                </button>
+
+                <button id="btnDelete" type="submit" asp-page-handler="Delete" class="btn btn-outline-dark btn-sm">
+                    <i class="bi bi-trash"></i>
+                </button>
+
+                <button type="submit" asp-page-handler="DeleteUnverified" class="btn btn-outline-warning btn-sm">
+                    <i class="bi bi-exclamation-triangle"></i>
+                </button>
+
+            </div>
+
+            <input id="filterInput" type="text" class="form-control form-control-sm w-25"
+                   placeholder="Filter by email..." />
+
+        </div>
+
+        <table class="table table-sm table-hover align-middle">
+
+            <thead class="table-light">
+                <tr>
+                    <th style="width:40px;">
+                        <input type="checkbox" id="selectAll" />
+                    </th>
+                    <th>Name</th>
+
+                    <th>
+                        <a class="text-decoration-none text-dark"
+                               href="?SortOrder=@(Model.SortOrder == "desc" ? "asc" : "desc")">
+                            Email @(Model.SortOrder == "desc" ? "↓" : "↑")
+                        </a>
+                    </th>
+
+                    <th>Status</th>
+                    <th>Last seen</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="SelectedIds" value="@user.Id" />
+                        </td>
+
+                        <td class="fw-semibold">@user.Name</td>
+
+                        <td class="text-muted email-cell">@user.Email</td>
+
+                        <td>
+                            @if (user.Status == UserStatus.Active)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else if (user.Status == UserStatus.Blocked)
+                            {
+                                <span class="badge bg-danger">Blocked</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Unverified</span>
+                            }
+                        </td>
+
+                        <td>
+                            <span data-bs-toggle="tooltip"
+                                  title="@user.LastLoginTime.ToString("dd.MM.yyyy HH:mm")">
+                                @task4.Helpers.TimeHelper.ToRelative(user.LastLoginTime)
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+    </form>
+</div>
+
+<script>
+    document.getElementById("selectAll").onclick = function () {
+        document.querySelectorAll('input[name="SelectedIds"]')
+            .forEach(cb => cb.checked = this.checked);
+    };
+
+    const checkboxes = document.querySelectorAll('input[name="SelectedIds"]');
+    const btnBlock = document.getElementById("btnBlock");
+    const btnUnblock = document.getElementById("btnUnblock");
+    const btnDelete = document.getElementById("btnDelete");
+
+    function updateButtons() {
+        const anyChecked = Array.from(checkboxes).some(cb => cb.checked);
+
+        btnBlock.disabled = !anyChecked;
+        btnUnblock.disabled = !anyChecked;
+        btnDelete.disabled = !anyChecked;
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', updateButtons));
+    updateButtons();
+
+    document.getElementById("filterInput").addEventListener("keyup", function () {
+        const value = this.value.toLowerCase();
+
+        document.querySelectorAll("#tableBody tr").forEach(row => {
+            const email = row.querySelector(".email-cell").innerText.toLowerCase();
+            row.style.display = email.includes(value) ? "" : "none";
+        });
+    });
+</script>
